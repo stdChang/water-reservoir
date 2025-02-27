@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --greenblue : rgb(66, 145, 152);
+  --lightblue : rgb(120, 199, 227);
+}
+
+
+#appContainer {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  position: absolute;
+  z-index: -1;
+  height: 125px;
+  width: 100%;
+  top: -25px; /* cancel out margin collapsing of #header */
+  background-color: var(--greenblue);
+}
+
+#header, #main { width: 80%; }
+
+#header { margin-top: 25px; }
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: inherit;
+  color: white;
+}
+
+#leftCol {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+p {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#noImage {
+  margin-right: 30px;
+}
+
+#smallPara {
+  margin-top: 10px;
+}
+
+figcaption {
+  font-size: 12px;
+  font-family: inherit
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: white;
+  background-color: var(--greenblue)
+}
+
+/* everything after button */
+
+#rightCol-active {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+#rightCol-inactive {
+  display: none;
+}
+
+#monthAndText {
+  margin-top: 30px;
+  width: 50%;
+  margin-left: 75px;
+}
+
+#monthPickerDiv {
+  margin-top: 10px;
+  padding: 10px 0px;
+  border: 1px solid #7a7a7a;
+  color: #7a7a7a;
+  width: 50%;
+  height: auto;
+}
+
+
+
+.month-year-picker {
+  width: 230px !important;
+}
+
+.month-year-picker .caption { /* space above monthyearpicker */
+  margin-bottom: -40px !important;
+}
+
+.month-year-picker .year-picker { /* div holding year pick */
+  margin-bottom: 10px !important;
+}
+
+.month-year-picker .year-picker span { /* year text */
+  width: 70% !important;
+  font-size: 20px !important;
+}
+
+.month-year-picker .month-picker > div > div { /* month button */ 
+  height: 40px !important;
+  margin: 5px !important;
+  width: 20% !important;
+}
+
+.month-year-picker .month-picker > div > div span { /* month button text */
+  font-size: 12px;
+}
+
+
+p#buttonDate{
+  margin-left: 25px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#changeMonthTitle{
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(66, 145, 152);
+  margin-top: 50px;
+}
+
+#chartDiv {
+  margin-right: 75px;
+  width: 50%;
+}
+
+#barChartContainer {
+  position: relative;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+  
+}
+
+#monthContainer {
+  position: relative;
+}
+
+#actualCalendarPicker {
+  /* the calendar cannot be resized - Objection hearsay */
+  display: flex;
+  position: absolute;
+}
+
+@media(max-width: 1300px) {
+  #leftCol { margin-top: 75px; }
+  #rightCol-active{ margin-top: 50px; }
+  img { width: 300px; }
+  #barChartContainer { height: 350px; }
+  #monthAndText { margin-left: 50px }
+  #chartDiv { margin-right: 50px }
+}
+
+@media(max-width: 1200px) {
+  h1{ text-align: center; }
+  #header, #main { width: 70%; }
+  #header{ display: flex; justify-content: center; }
+  #leftCol {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  img {
+    width: 100%;
+  }
+  #noImage {
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+  #rightCol-active{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  button{ margin-top: 20px; }
+  #monthAndText {
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  #chartDiv {
+    margin-top: 150px;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #barChartContainer { height: 500px; }
+  .month-year-picker .month-picker > div > div span {
+    font-size: 12px !important;
+  }
+  .month-year-picker .month-picker > div > div {
+    height: 30px !important;
+    width: 19% !important;
+  }
+  .month-year-picker {
+    width: 190px !important;
+  }
+}
+
+@media(max-width: 746px) {
+  hr {
+    height: 150px;
+  }
+  #header { margin-top: 20px; }
+}
+
+@media(max-width: 700px) {
+  #header, #main { width: 80%; }
+  #rightCol-active{ margin-top: 50px; }
+  #chartDiv { margin-top: 100px; }
+}
