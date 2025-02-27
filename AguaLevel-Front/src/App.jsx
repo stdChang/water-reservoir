@@ -94,7 +94,11 @@ function App() {
   
   async function askBackendForWater(){
     console.log(time);
-    let response = JSON.parse(await sendPostRequest("/query/getWaterData", time));
+    // Post grad steven here
+    // for sake of testing, adding back end url because replit used to run back and front in same domain
+    // original implementation did not use serverUrl
+    let serverUrl = "http://localhost:3000"
+    let response = JSON.parse(await sendPostRequest(serverUrl + "/query/getWaterData", time));
     console.log(response);
 
     waterLevels = [];

@@ -8,6 +8,16 @@ const app = express();
 
 const fetch = require("cross-fetch"); 
 
+// additional cors protocols post-graduation
+const cors = require("cors");
+const corsOptions = {
+  origin: "http://localhost:5173"
+  // //5173 is the port vite often uses
+};
+
+app.use(cors(corsOptions));
+
+
 const bodyParser = require('body-parser');
 
 
