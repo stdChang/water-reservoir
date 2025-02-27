@@ -1,18 +1,24 @@
 {
   "name": "agualevel-back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "",
+  "author": "stdChang",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
     "cross-fetch": "^3.1.5",
-    "express": "^4.18.1",
+    "express": "^4.21.2",
     "node-fetch": "^3.2.4"
-  }
+  },
+  "devDependencies": {
+    "codemon": "^0.1.31-development",
+    "nodemon": "^3.1.9"
+  },
+  "description": "Backend with Express to communicate with CDEC API :>"
 }
