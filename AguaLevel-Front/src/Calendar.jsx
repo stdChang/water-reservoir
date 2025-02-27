@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import MonthYearPicker from 'react-month-year-picker';
 
 function Calendar(props) {
+  const currentYear = new Date().getFullYear();
+
   // pass month setter, this will be a function to keep year, change month
   // pass year setter, this will be a function to keep month, change year
   // pass date as two props: .month and .year
@@ -27,7 +29,8 @@ function Calendar(props) {
           onChangeMonth = {changeMonth}
           
           minYear = {2000}
-          maxYear = {2022}
+          maxYear = {currentYear}
+          // Now gets up to current year use Date obj instead of just hard coded 2022 lmao
           caption = ""
           />
       </div>
