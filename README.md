@@ -60,17 +60,35 @@ Built alongside Ishan Singh and eventually Sohum Goel, we constructed each part 
 * [![Express][Express]][Express-url]
 * [![Replit][Replit]][Replit-url]
 * [![Vite][Vite]][Vite-url]
-* https://www.ppic.org/wp-content/uploads/californias-water-storing-water-november-2018.pdf
   
-<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/FireShot%20Capture%20014%20-%20Vite%20App%20-%20%5Blocalhost%5D.png"/>
-<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/FireShot%20Capture%20016%20-%20Vite%20App%20-%20%5Blocalhost%5D.png"/>
-<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20204742.png"/>
-<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20204843.png"/>
-<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20205108.png"/>
+
 
 <!-- USAGE EXAMPLES -->
+## Purpose
+Civil Engineers interested in the California Data Exchange Center (CDEC) can observe the capacity and water levels of California's reservoirs. This information is vital and predicting trends can have an impact not only on daily life for citizens, but could point to larger-scale problems within the management of our government spending/regulation of water resources. Warnings of such problems allow people to understand the risk of situations such as the Palisade and Eaton Canyon fires and give citizens a heads-up before similar repeat disasters strike.
+
+
+<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20204742.png"/>
+
+The full document can be found [here](https://www.ppic.org/wp-content/uploads/californias-water-storing-water-november-2018.pdf).
+<br/>
+
 ## Usage
-Civil Engineers interested in the CDEC can observe the capacity and water levels of California's reservoirs.
+
+Engineers can set a specific month to observe various data collected from reservoirs. The calendar widget goes from 2020 up to the current year.
+<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/FireShot%20Capture%20014%20-%20Vite%20App%20-%20%5Blocalhost%5D.png"/>
+<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/FireShot%20Capture%20016%20-%20Vite%20App%20-%20%5Blocalhost%5D.png"/>
+
+<br/>
+
+## Behind the Scenes
+
+* Frontend Console Perspective
+<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20204843.png"/>
+
+* Backend Console Perspective
+<img src="https://raw.githubusercontent.com/stdChang/water-reservoir/master/assets/Screenshot%202025-02-26%20205108.png"/>
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
